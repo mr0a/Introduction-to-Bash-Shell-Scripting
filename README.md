@@ -61,7 +61,7 @@ To let terminal know our alias commands run `source .bash_aliases`
 
 ### Video5: Writing a Shell Script
 - #!/bin/bash - This is a note to the interpreter that this is a bash script
-- # - is comment in bash
+- \# - is comment in bash
 - VAR=`date %d%m%Y` - will save the date to VAR variable ( enclose within \` to run the command and return the output)
 - To get value of stored variables use $VAR.
 - To run a file `./file`(only if file has executable permission) or `source file`
