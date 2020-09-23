@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# myBackup : backup utility for dev directory
+
+BACKUP_PATH="/home/rhyme/dev/"
+HOME_PATH="/home/rhyme/"
+
+DATE=`date +%d%m%Y`
+
+BACKUP="backup_"
+EXT=".tar"
+
+FILE_NAME=$HOME_PATH$BACKUP$DATE$EXT
+
+#echo $FILE_NAME
+
+tar cfz $FILE_NAME $BACKUP_PATH # c - create file, z - for zipping
+
+#gzip $FILE_NAME # Compressing a file
+
+
+if test -f "$FILE_NAME"; then
+ echo "Here's your backup" | mail -A $FILE_NAME -s "Today's Backup" caterina.rowe9722@stempmail.com
+else
+ echo $DATE "There is a problem in creating Backup" >> $HOME_PATH/errormy.log
+fi #end of condition
