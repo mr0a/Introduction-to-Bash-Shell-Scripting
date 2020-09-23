@@ -20,7 +20,7 @@ tar cfz $FILE_NAME $BACKUP_PATH # c - create file, z - for zipping
 
 
 if test -f "$FILE_NAME"; then
- echo "Here's your backup" | mail -A $FILE_NAME -s "Today's Backup" caterina.rowe9722@stempmail.com
+ echo "Here's your backup" | mail -A $FILE_NAME -s "Today's Backup" myemail@example.com
 else
  echo $DATE "There is a problem in creating Backup" >> $HOME_PATH/errormy.log
 fi #end of condition
