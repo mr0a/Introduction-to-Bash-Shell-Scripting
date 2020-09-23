@@ -1,7 +1,7 @@
 # Introduction-to-Bash-Shell-Scripting
 
 ### Video1: Navigation
-- Open cli(terminal) from gui or using `ctrl + t` to execute commands.
+- Open cli(terminal) from gui or using `ctrl + alt + t` to execute commands.
 - `echo $SHELL` - returns the shell running on the terminal
   - Generally in linux you will find bin/bash which is the bash shell. Bash - Bourne Again Shell  
   There are many other shells like c-shell, z-shell, korn-shell.  
